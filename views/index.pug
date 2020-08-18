@@ -6,6 +6,7 @@ html
 
     h2 Developed By
     ul
+<<<<<<< HEAD
       for developer in showdata.developedBy
         li= developer
 
@@ -18,4 +19,18 @@ html
     ul
       for season in showdata.seasons 
         li= season
+=======
+      for developedBy in showdata.developedBy
+        li= developedBy
+
+    h2 Starring
+    ul
+      for starring in showdata.starring
+        li= starring
+
+    h2 Seasons
+    ul
+      for season in showdata.seasons
+        li
+>>>>>>> b8cb52e0a2320042f0488674bb5a3e9beb7e3db3
           a(href=`/season/${season.number}`)= `Season ${season.number}`
